@@ -100,9 +100,18 @@ h2 {
 .navigation-item:first-child {
   margin-right: 85px;
 }
-.contacts-items img {
+.heder-icons {
   margin-right: 10px;
 }
+
+/* .navigation-link:hover .navigation-item::after {
+  content: ();
+  display: block;
+  width: 47px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+} */
 
 .contacts-list {
   display: flex;
@@ -112,7 +121,7 @@ h2 {
   margin-right: 30px;
 }
 
-.container {
+.container-section {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -125,8 +134,12 @@ h2 {
   text-align: center;
   padding-top: 195px;
   padding-bottom: 205px;
-
-  background-color: #dcdde2;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/jpg/hero-bg.jpg');
+  background-repeat: no-repeat;
 }
 .main-title-container {
   margin-right: auto;
@@ -163,13 +176,10 @@ h2 {
   border-radius: 4px;
   border: transparent;
 }
-/* .modal-btn:hover,
+.modal-btn:hover,
 .modal-btn:focus {
-  color: #2196f3;
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: #2196f3;
-} */
+  background-color: #188ce8;
+}
 /* main features */
 .features-container {
   padding-top: 89px;
@@ -253,6 +263,14 @@ h2 {
 .our-team-list img {
   margin-bottom: 30px;
 }
+.our-team-list > li {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-container {
+  background-color: #f5f4fa;
+}
 .team-man {
   margin-bottom: 10px;
 }
@@ -278,6 +296,7 @@ h2 {
   width: 206px;
   height: 44px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .social-list .icon {
@@ -308,9 +327,20 @@ h2 {
   border-color: #afb1b8;
   border-radius: 4px;
 }
+
+.customers-icon-svg {
+  fill: #afb1b8;
+}
+.customer-link:hover .customers-icon-svg {
+  fill: #2196f3;
+}
+.customers-icon .customer-link:hover {
+  border-color: #2196f3;
+}
+
 /* footer */
 .footer {
-  background-color: #757575;
+  background-color: #2f303a;
 }
 .footer-address,
 .footer-contact {

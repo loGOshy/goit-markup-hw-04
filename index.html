@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container-section">
       <div class="container">
         <nav class="navigation">
           <ul class="navigation-list list">
@@ -39,14 +39,18 @@
           <li class="contacts-items">
             <address>
               <a class="header-mail link" href="mailto:info@devstudio.com">
-                <img src="./images/svg/mail.svg" alt="иконка почты" />
+                <svg class="heder-icons" width="16px" height="11px">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
                 info@devstudio.com
               </a>
             </address>
           </li>
           <li class="contacts-items">
             <a class="header-tel link" href="tell:+380961111111">
-              <img src="./images/svg/phone.svg" alt="иконка телефона" />
+              <svg class="heder-icons" width="10px" height="15px">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -55,7 +59,7 @@
     </header>
     <main>
       <!-- HERO section -->
-      <section class="hero">
+      <section class="hero container-section">
         <div class="container">
           <div class="main-title-container">
             <h1 class="main-title">
@@ -67,18 +71,16 @@
         </div>
       </section>
       <!-- Особенности -->
-      <section>
+      <section class="container-section">
         <div class="container features-container">
           <h2 hidden>Особенности</h2>
           <ul class="list list-features">
             <li>
               <div class="feature">
                 <div class="features-images-items">
-                  <img
-                    class="features-image"
-                    src="./images/png/antenna.png"
-                    alt="рисунок антена"
-                  />
+                  <svg width="70px" height="70px">
+                    <use href="./images/sprite.svg#antenna"></use>
+                  </svg>
                 </div>
                 <h3 class="feature-title">Внимание к деталям</h3>
                 <p class="feature-dasc">
@@ -90,11 +92,9 @@
             <li>
               <div class="feature">
                 <div class="features-images-items">
-                  <img
-                    class="features-image"
-                    src="./images/png/clock.png"
-                    alt="рисунок часы"
-                  />
+                  <svg width="70px" height="70px">
+                    <use href="./images/sprite.svg#clock"></use>
+                  </svg>
                 </div>
                 <h3 class="feature-title">Пунктуальность</h3>
                 <p class="feature-dasc">
@@ -106,11 +106,9 @@
             <li>
               <div class="feature">
                 <div class="features-images-items">
-                  <img
-                    class="features-image"
-                    src="./images/png/diagram.png"
-                    alt="рисунок диаграмма"
-                  />
+                  <svg width="70px" height="70px">
+                    <use href="./images/sprite.svg#diagram"></use>
+                  </svg>
                 </div>
                 <h3 class="feature-title">Планирование</h3>
                 <p class="feature-dasc">
@@ -122,11 +120,9 @@
             <li>
               <div class="feature">
                 <div class="features-images-items">
-                  <img
-                    class="features-image"
-                    src="./images/png/cosmonaut.png"
-                    alt="рисунок космонавт"
-                  />
+                  <svg width="70px" height="70px">
+                    <use href="./images/sprite.svg#astronaut"></use>
+                  </svg>
                 </div>
                 <h3 class="feature-title">Современные технологии</h3>
                 <p class="feature-dasc">
@@ -139,7 +135,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section>
+      <section class="container-section">
         <div class="container labor-container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="labor-list list">
@@ -180,7 +176,7 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section>
+      <section class="container-section team-container">
         <div class="container our-team-container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team-list list">
@@ -197,38 +193,31 @@
                 <ul class="social-list list">
                   <li>
                     <a aria-label="иконка инстаграмм" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/instagram.svg"
-                        alt="иконка инстаграмм"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка твиттер" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/twitter.svg"
-                        alt="иконка твиттер"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка фейсбук" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/facebook.svg"
-                        alt="иконка фейсбук"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка линкенин" href=""
-                      ><img
-                        class="icon"
-                        src="./images/svg/linkedin.svg"
-                        alt="иконка линкенин"
-                    /></a>
+                      ><svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -246,38 +235,31 @@
                 <ul class="social-list list">
                   <li>
                     <a aria-label="иконка инстаграмм" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/instagram.svg"
-                        alt="иконка инстаграмм"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка твиттер" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/twitter.svg"
-                        alt="иконка твиттер"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка фейсбук" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/facebook.svg"
-                        alt="иконка фейсбук"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка линкенин" href=""
-                      ><img
-                        class="icon"
-                        src="./images/svg/linkedin.svg"
-                        alt="иконка линкенин"
-                    /></a>
+                      ><svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -295,38 +277,31 @@
                 <ul class="social-list list">
                   <li>
                     <a aria-label="иконка инстаграмм" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/instagram.svg"
-                        alt="иконка инстаграмм"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка твиттер" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/twitter.svg"
-                        alt="иконка твиттер"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка фейсбук" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/facebook.svg"
-                        alt="иконка фейсбук"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
-                    <a aria-label="иконка линкенин" href=""
-                      ><img
-                        class="icon"
-                        src="./images/svg/linkedin.svg"
-                        alt="иконка линкенин"
-                    /></a>
+                    <a aria-label="иконка линкенин" href="">
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -344,38 +319,31 @@
                 <ul class="social-list list">
                   <li>
                     <a aria-label="иконка инстаграмм" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/instagram.svg"
-                        alt="иконка инстаграмм"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка твиттер" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/twitter.svg"
-                        alt="иконка твиттер"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка фейсбук" href="">
-                      <img
-                        class="icon"
-                        src="./images/svg/facebook.svg"
-                        alt="иконка фейсбук"
-                      />
+                      <svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a aria-label="иконка линкенин" href=""
-                      ><img
-                        class="icon"
-                        src="./images/svg/linkedin.svg"
-                        alt="иконка линкенин"
-                    /></a>
+                      ><svg width="44px" height="44px">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -384,57 +352,69 @@
         </div>
       </section>
       <!-- Постоянные клиенты -->
-      <section>
+      <section class="container-section">
         <div class="customers-container container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="customers-list list">
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 1" href=""
-                  ><img src="./images/svg/client1.svg" alt="иконка клиент 1"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 1" href="">
+                  <svg class="customers-icon-svg" width="44px" height="49px">
+                    <use href="./images/sprite.svg#client1"></use>
+                  </svg>
+                </a>
               </div>
             </li>
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 2" href=""
-                  ><img src="./images/svg/client2.svg" alt="иконка клиент 2"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 2" href="">
+                  <svg class="customers-icon-svg" width="40px" height="52px">
+                    <use href="./images/sprite.svg#client2"></use>
+                  </svg>
+                </a>
               </div>
             </li>
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 3" href=""
-                  ><img src="./images/svg/client3.svg" alt="иконка клиент 3"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 3" href="">
+                  <svg class="customers-icon-svg" width="40px" height="42px">
+                    <use href="./images/sprite.svg#client3"></use>
+                  </svg>
+                </a>
               </div>
             </li>
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 4" href=""
-                  ><img src="./images/svg/client4.svg" alt="иконка клиент 4"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 4" href="">
+                  <svg class="customers-icon-svg" width="80px" height="42px">
+                    <use href="./images/sprite.svg#client4"></use>
+                  </svg>
+                </a>
               </div>
             </li>
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 5" href=""
-                  ><img src="./images/svg/client5.svg" alt="иконка клиент 5"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 5" href="">
+                  <svg class="customers-icon-svg" width="59px" height="47px">
+                    <use href="./images/sprite.svg#client5"></use>
+                  </svg>
+                </a>
               </div>
             </li>
             <li>
               <div class="customers-icon">
-                <a aria-label="имя компании 6" href=""
-                  ><img src="./images/svg/client6.svg" alt="иконка клиент 6"
-                /></a>
+                <a class="customer-link" aria-label="имя компании 6" href="">
+                  <svg class="customers-icon-svg" width="88px" height="46px">
+                    <use href="./images/sprite.svg#client6"></use>
+                  </svg>
+                </a>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container-section">
       <div class="footer-conteiner container">
         <div class="footer-adress">
           <p>
@@ -474,38 +454,31 @@
             <ul class="social-list list">
               <li>
                 <a aria-label="иконка инстаграмм" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/instagram.svg"
-                    alt="иконка инстаграмм"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#instagram2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка твиттер" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/twitter.svg"
-                    alt="иконка твиттер"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#twitter2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка фейсбук" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/facebook.svg"
-                    alt="иконка фейсбук"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#facebook2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка линкенин" href=""
-                  ><img
-                    class="icon"
-                    src="./images/svg/linkedin.svg"
-                    alt="иконка линкенин"
-                /></a>
+                  ><svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#linkedin2"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>

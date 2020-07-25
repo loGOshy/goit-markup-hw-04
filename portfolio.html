@@ -13,14 +13,14 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header container-section">
       <div class="container">
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-item">
               <a class="logo link" lang="en" href="index.html">
-                <span class="web">Web</span> <span>Studio</span></a
-              >
+                <span class="web">Web</span> <span>Studio</span>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link link" href="index.html">Студия</a>
@@ -40,14 +40,18 @@
           <li class="contacts-items">
             <address>
               <a class="header-mail link" href="mailto:info@devstudio.com">
-                <img src="./images/svg/mail.svg" alt="иконка почты" />
+                <svg class="heder-icons" width="16px" height="11px">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
                 info@devstudio.com
               </a>
             </address>
           </li>
           <li class="contacts-items">
             <a class="header-tel link" href="tell:+380961111111">
-              <img src="./images/svg/phone.svg" alt="иконка телефона" />
+              <svg class="heder-icons" width="10px" height="15px">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -55,7 +59,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="container-section">
         <div class="portfolio-container container">
           <ul class="btn-list list">
             <li><button class="filter-btn">Все</button></li>
@@ -157,7 +161,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container-section">
       <div class="footer-conteiner container">
         <div class="footer-adress">
           <p>
@@ -197,38 +201,31 @@
             <ul class="social-list list">
               <li>
                 <a aria-label="иконка инстаграмм" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/instagram.svg"
-                    alt="иконка инстаграмм"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#instagram2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка твиттер" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/twitter.svg"
-                    alt="иконка твиттер"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#twitter2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка фейсбук" href="">
-                  <img
-                    class="icon"
-                    src="./images/svg/facebook.svg"
-                    alt="иконка фейсбук"
-                  />
+                  <svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#facebook2"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="иконка линкенин" href=""
-                  ><img
-                    class="icon"
-                    src="./images/svg/linkedin.svg"
-                    alt="иконка линкенин"
-                /></a>
+                  ><svg width="44px" height="44px">
+                    <use href="./images/sprite.svg#linkedin2"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
