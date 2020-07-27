@@ -22,6 +22,9 @@ body {
   margin: 0px;
   list-style: none;
 }
+img {
+  display: block;
+}
 
 h1,
 h3,
@@ -47,7 +50,7 @@ h2 {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.footer .logo {
+footer .logo {
   color: #ffffff;
 }
 .web {
@@ -83,7 +86,7 @@ h2 {
   color: #2196f3;
 }
 
-.header .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,9 +107,16 @@ h2 {
   margin-right: 10px;
 }
 
-/* .navigation-link:hover .navigation-item::after {
-  content: ();
+header {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* .navigation-link::after {
   display: block;
+  content: ();
   width: 47px;
   height: 4px;
   background: #2196f3;
@@ -121,11 +131,16 @@ h2 {
   margin-right: 30px;
 }
 
-.container-section {
+section {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin: 0 auto;
+}
+section:nth-child(3) {
+  padding-top: 0px;
 }
 
 /* main */
@@ -181,10 +196,7 @@ h2 {
   background-color: #188ce8;
 }
 /* main features */
-.features-container {
-  padding-top: 89px;
-  padding-bottom: 94px;
-}
+
 .list-features {
   display: flex;
   justify-content: space-between;
@@ -245,20 +257,13 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.labor-container {
-  padding-bottom: 94px;
-}
+
 .work-item {
   text-align: center;
   color: #ffffff;
 }
 
 /* Наша команда */
-.our-team-container,
-.customers-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .our-team-list img {
   margin-bottom: 30px;
@@ -268,7 +273,7 @@ h2 {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-.team-container {
+.team-section {
   background-color: #f5f4fa;
 }
 .team-man {
@@ -339,8 +344,15 @@ h2 {
 }
 
 /* footer */
-.footer {
+
+footer {
   background-color: #2f303a;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
 }
 .footer-address,
 .footer-contact {
@@ -368,8 +380,6 @@ h2 {
 }
 .footer-conteiner {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-adress {
   width: 230px;
@@ -430,10 +440,7 @@ h2 {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.portfolio-container {
-  padding-top: 93px;
-  padding-bottom: 94px;
-}
+
 .btn-list {
   display: flex;
   justify-content: center;
