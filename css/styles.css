@@ -201,10 +201,40 @@ section:nth-child(3) {
   display: flex;
   justify-content: space-between;
 }
-.feature {
+.feature-items {
   width: 270px;
 }
 
+.feature-items::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-items:nth-child(1)::before {
+  background-image: url('../images/svg/antenna.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-items:nth-child(2)::before {
+  background-image: url('../images/svg/clock.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-items:nth-child(3)::before {
+  background-image: url('../images/svg/diagram.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-items:nth-child(4)::before {
+  background-image: url('../images/svg/astronaut.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .feature-title,
 .work-item {
   font-weight: bold;
