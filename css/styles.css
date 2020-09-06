@@ -105,8 +105,11 @@ header .container {
 }
 .heder-icons {
   margin-right: 10px;
+  --color5: #757575;
 }
-
+.contacts-items:hover .heder-icons {
+  --color5: #2196f3;
+}
 header {
   width: 1200px;
   padding-left: 15px;
@@ -114,19 +117,16 @@ header {
   margin: 0 auto;
 }
 
-/* .navigation-link::after {
-  display: block;
-  content: ();
-  width: 47px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-} */
-
 .contacts-list {
   display: flex;
   align-items: center;
 }
+.header-mail,
+.header-tel {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-items:not(:last-child) {
   margin-right: 30px;
 }
@@ -306,6 +306,9 @@ section:nth-child(3) {
 .team-section {
   background-color: #f5f4fa;
 }
+.team-personal-card {
+  background-color: #fff;
+}
 .team-man {
   margin-bottom: 10px;
 }
@@ -334,12 +337,14 @@ section:nth-child(3) {
   margin-bottom: 24px;
 }
 
-/* .social-list .icon {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
-
 .social-list-icon {
+  --color3: #afb1b8;
+  --color4: #fff;
+}
+.social-list-icon:hover,
+.social-list-icon:focus {
+  --color3: #fff;
+  --color4: #2196f3;
 }
 
 .social-list {
@@ -357,7 +362,7 @@ section:nth-child(3) {
 .customers-icon {
   width: 170px;
   height: 90px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-style: solid;
@@ -369,9 +374,15 @@ section:nth-child(3) {
 .customers-icon-svg {
   fill: #afb1b8;
 }
-.customer-link:hover .customers-icon-svg {
+.customers-items:hover .customers-icon-svg,
+.customers-items:focus .customers-icon-svg {
   fill: #2196f3;
 }
+.customers-items:hover .customers-icon,
+.customers-items:focus .customers-icon {
+  border-color: #2196f3;
+}
+
 .customers-icon .customer-link:hover {
   border-color: #2196f3;
 }
@@ -428,6 +439,14 @@ footer {
 .colling-box {
   width: 206px;
   padding-top: 12px;
+}
+.social-list-icon-futer {
+  --color3: #fff;
+  --color4: rgba(255, 255, 255, 0.1);
+}
+.social-list-icon-futer:hover,
+.social-list-icon-futer:focus {
+  --color4: #2196f3;
 }
 
 /* Portfolio */
